@@ -29,7 +29,7 @@
   - QR Attack
     > Run this script to evaluate our AdaShiled
     ```Shell
-       bash scripts/inferours_qr.sh
+       bash scripts/infer_ours_qr.sh
     ```
 
   - FigStep Attack
