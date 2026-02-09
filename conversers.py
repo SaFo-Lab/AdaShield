@@ -103,9 +103,9 @@ class DefenseVLM():
             init_message = """{\"improvement\": \"""" 
 
         full_prompts = []
-        task_prompt = f'''Please optimize the defense prompt based on the response of vision-language moodel to a jailbreak instruction from scenario {self.scenario}. \n
+        task_prompt = f'''Please optimize the defense prompt based on the response of vision-language model to a jailbreak instruction from scenario {self.scenario}. \n
                         The safety rules of scenario {self.scenario} is {self.rule}
-                       You should optimize defense prompt based on the specific rules to improve the vision-language model's safety. \n The response of vision-language moodel is: "{prompt}" '''
+                       You should optimize defense prompt based on the specific rules to improve the vision-language model's safety. \n The response of vision-language model is: "{prompt}" '''
 
         conv.append_message(conv.roles[0], task_prompt)
         
